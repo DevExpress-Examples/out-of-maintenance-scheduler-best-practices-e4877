@@ -1,0 +1,1 @@
+<%@ Application Codebehind="Global.asax.cs" Inherits="SchdulerBestPracticesMvc.MvcApplication" Language="C#" %>

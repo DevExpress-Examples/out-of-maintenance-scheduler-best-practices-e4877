@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CarsXtraScheduling" Class="SchedulingDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLExpress;Initial Catalog=CarsXtraScheduling;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="CarsXtraSchedulingConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Cars" Member="Cars">
+    <Type Name="Car">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Trademark" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Model" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HP" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Liter" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Cyl" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TransmissSpeedCount" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TransmissAutomatic" Type="System.String" DbType="NVarChar(3)" CanBeNull="true" />
+      <Column Name="MPG_City" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="MPG_Highway" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Category" Type="System.String" DbType="NVarChar(7)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Hyperlink" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Picture" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Price" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="RtfContent" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CarScheduling" Member="CarSchedulings">
+    <Type Name="CarScheduling">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CarId" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Subject" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Label" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StartTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EndTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Location" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AllDay" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EventType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RecurrenceInfo" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ReminderInfo" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Price" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="ContactInfo" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+</Database>

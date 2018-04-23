@@ -1,0 +1,5 @@
+@model object
+@Html.DevExpress().Memo(s => {
+    s.Name = ViewContext.ViewData.TemplateInfo.GetFullHtmlFieldName("");
+    s.Width = 170;
+}).Bind(Model).GetHtml()

@@ -1,0 +1,4 @@
+@model DateTime?
+@Html.DevExpress().DateEdit(s => {
+    s.Name = ViewContext.ViewData.TemplateInfo.GetFullHtmlFieldName("");
+}).Bind(Model).GetHtml()

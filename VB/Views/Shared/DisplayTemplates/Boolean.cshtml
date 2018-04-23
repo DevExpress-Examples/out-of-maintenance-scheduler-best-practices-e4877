@@ -1,0 +1,5 @@
+@model Boolean?
+@Html.DevExpress().CheckBox(s => {
+    s.Name = ViewContext.ViewData.TemplateInfo.GetFullHtmlFieldName("") + "_dspl";
+    s.ReadOnly = true;
+}).Bind(Model).GetHtml()
