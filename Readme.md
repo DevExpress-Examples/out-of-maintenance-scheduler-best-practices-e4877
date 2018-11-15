@@ -1,3 +1,12 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [SchedulerHelper.cs](./CS/Code/SchedulerHelper.cs) (VB: [SchedulerHelper.vb](./VB/Code/SchedulerHelper.vb))
+* [HomeController.cs](./CS/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/Controllers/HomeController.vb))
+* [Scheduling.cs](./CS/Models/Scheduling.cs) (VB: [Scheduling.vb](./VB/Models/Scheduling.vb))
+* [Index.cshtml](./CS/Views/Home/Index.cshtml)
+* [SchedulerPartial.cshtml](./CS/Views/Home/SchedulerPartial.cshtml)
+<!-- default file list end -->
 # Scheduler - Best practices
 
 
