@@ -6,6 +6,7 @@
 * [Scheduling.cs](./CS/Models/Scheduling.cs) (VB: [Scheduling.vb](./VB/Models/Scheduling.vb))
 * [Index.cshtml](./CS/Views/Home/Index.cshtml)
 * [SchedulerPartial.cshtml](./CS/Views/Home/SchedulerPartial.cshtml)
+* [CarsXtraScheduling.sql](./CS/App_Data/CarsXtraScheduling.sql) (VB: [CarsXtraScheduling.sql](./VB/App_Data/CarsXtraScheduling.sql))
 <!-- default file list end -->
 # Scheduler - Best practices
 
